@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" /> <!-- 文字エンコーディングの指定 -->
+
+	<!-- Appleデバイス用のアイコンリンク -->
+	<link rel="apple-touch-icon" sizes="180x180" href="%sveltekit.assets%/apple-touch-icon.png">
+
+	<!-- ブラウザのタブアイコン（favicon）リンク -->
+	<link rel="icon" type="image/png" sizes="32x32" href="%sveltekit.assets%/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="%sveltekit.assets%/favicon-16x16.png">
+
+	<!-- Webサイトのマニフェストファイルリンク -->
+	<link rel="manifest" href="%sveltekit.assets%/site.webmanifest">
+
+	<!-- Windowsのタイル色とテーマ色の設定 -->
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- サイトの説明 -->
+	<meta name="description" content="A simple note taking app" />
+
+	<!-- ビューポートの設定 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Google Fontsからのフォント読み込み -->
+	<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://fonts.googleapis.com/css?family=PT+Serif|Open+Sans:300,400,600,700,800"
+	/>
+
+	<!-- 基本的なスタイリング -->
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			color: #333;
+			font-size: 16px;
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			font-family: "Open Sans", sans-serif;
+		}
+		h1, h2, h3, h4, h5, h6 {
+			font-family: "PT Serif", serif;
+		}
+	</style>
+
+	<!-- グローバル変数の設定 -->
+	<script>
+		if (global === undefined) {
+			var global = window;
+		}
+	</script>
+
+	<!-- タイトルの設定 -->
+	<title>Scratch - A simple note taking app</title>
+
+	<!-- SvelteKit用のヘッダータグ -->
+	%sveltekit.head%
+</head>
+<body data-sveltekit-preload-data="hover">
+<!-- SvelteKitのボディ部分 -->
+<div style="display: contents">%sveltekit.body%</div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+/* Tailwindの基本スタイルをインポート */
+@tailwind base;
+
+/* Tailwindのコンポーネントスタイルをインポート */
+@tailwind components;
+
+/* Tailwindのユーティリティスタイルをインポート */
+@tailwind utilities;
